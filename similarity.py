@@ -43,7 +43,8 @@ def returnTable(dictionary):
     df = pd.DataFrame({'Similarity (%)': dictionary})
     #df = df.fillna(' ').T
     #df = df.transpose()
-    return df.to_html()
+    #classes = 'table table-striped table-bordered table-hover table-sm' ==> and pass this class to return html
+    return df.to_html(["table-bordered", "table-striped", "table-hover"])
 
 if __name__ == '__main__':
     report('This is a pure test')
