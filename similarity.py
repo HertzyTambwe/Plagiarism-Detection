@@ -44,7 +44,7 @@ def returnTable(dictionary):
     #df = df.fillna(' ').T
     #df = df.transpose()
     #classes = 'table table-striped table-bordered table-hover table-sm' ==> and pass this class to return html
-    return df.to_html(["table-bordered", "table-striped", "table-hover"])
+    return df.to_html()
 
 if __name__ == '__main__':
     report('This is a pure test')
