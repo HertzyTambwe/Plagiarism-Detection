@@ -1,0 +1,20 @@
+{% extends "main.html" %}
+
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Similariter</th>
+        <th>Pourcentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for  in  %}
+        <tr>
+          <td>{{ }}</td>
+          <td>{{  }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
